@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  color: #1e293b;
+
+  /* Soft background */
+  background:
+    radial-gradient(circle at top, #eff6ff 0%, #f8fafc 35%, #ffffff 100%);
+}
+
+/* Nice scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Selection */
+
+::selection {
+  background: #2563eb;
+  color: white;
+}
+
+/* Smooth transitions */
+
+button,
+input,
+textarea,
+a {
+  transition: all 0.25s ease;
+}
+
+/* Better focus */
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* Images */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Utility */
+
+.card-hover {
+  transition: all .25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+}
